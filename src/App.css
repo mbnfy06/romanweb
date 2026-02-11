@@ -1,0 +1,36 @@
+/* App specific styles */
+.app {
+  min-height: 100vh;
+}
+
+/* Process + Contact section layout */
+.process-contact {
+  padding: 100px 0;
+  background: var(--bg-white);
+}
+
+.process-contact__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Override ProcessSection styles when inside process-contact */
+.process-contact .process {
+  padding: 0;
+  background: transparent;
+}
+
+.process-contact .process__container {
+  display: block;
+  padding: 0;
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .process-contact__container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
