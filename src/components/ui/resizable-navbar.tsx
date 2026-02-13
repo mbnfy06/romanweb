@@ -230,7 +230,7 @@ export const MobileNavMenu = ({
                     animate={{ opacity: 1, height: "auto", y: 0 }}
                     exit={{ opacity: 0, height: 0, y: -20 }}
                     className={cn(
-                        "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-xl bg-roman-card border border-white/10 px-6 py-8 shadow-2xl",
+                        "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-xl bg-roman-card border border-white/10 px-6 py-8 shadow-2xl max-h-[80vh] overflow-y-auto",
                         className,
                     )}
                 >
